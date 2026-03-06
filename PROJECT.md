@@ -42,12 +42,7 @@ Data visualization + descriptive technical analysis. External data source (yfina
 stock-dashboard/
 ├── PROJECT.md
 ├── BRIEFING.md
-├── .antigravity/
-│   └── rules.md
-├── .agent/
-│   └── skills/
-│       └── backend/
-│           └── skill.md
+
 ├── app.py                        ← Streamlit entry point
 ├── analysis/
 │   ├── __init__.py

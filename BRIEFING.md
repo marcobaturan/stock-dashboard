@@ -26,12 +26,7 @@ Streamlit application that fetches real historical stock data and displays an in
 stock-dashboard/
 ├── PROJECT.md                        ← Source of truth. Always read first.
 ├── BRIEFING.md                       ← This document.
-├── .antigravity/
-│   └── rules.md                      ← Global rules (auto-loaded)
-├── .agent/
-│   └── skills/
-│       └── backend/
-│           └── skill.md              ← Only active role: Python/Streamlit/data
+Streamlit/data
 ├── app.py                            ← Streamlit entry point
 ├── analysis/
 │   ├── __init__.py
