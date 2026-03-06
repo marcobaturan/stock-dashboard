@@ -116,25 +116,22 @@ if st.session_state.get("fetch_trigger"):
             st.markdown("---")
             st.subheader("🤖 AI Technical Summary")
             
-            if st.secrets.get("HF_API_KEY"):
-                with st.expander("Generate AI Analysis Report"):
-                    # Compiling a prompt describing the indicators mathematically
-                    analysis_prompt = (
-                        f"Analyze the technical indicators for {data_source}.\n"
-                        f"Current Price: {df['Close'].iloc[-1]:.2f}\n"
-                        f"MA20: {mas['MA20'].iloc[-1]:.2f}, MA50: {mas['MA50'].iloc[-1]:.2f}, MA200: {mas['MA200'].iloc[-1]:.2f}\n"
-                        f"Fibonacci Support (0.0): {fib['0.0']:.2f}, Fibonacci Resistance (1.0): {fib['1.0']:.2f}\n"
-                        f"Write a short, professional trading summary based strictly on these indicators."
-                    )
-                    
-                    if st.button("Generate Summary"):
-                        with st.spinner("Contacting Hugging Face Inference API..."):
-                            summary = get_ai_summary(analysis_prompt)
-                            if summary:
-                                st.write(summary)
-                            else:
-                                st.error("Failed to generate summary. The API might be overloaded or the key is invalid.")
-            else:
-                st.info("Hugging Face API key not found in secrets. AI summary generation is disabled.")
+            with st.expander("Generate AI Analysis Report"):
+                # Compiling a prompt describing the indicators mathematically
+                analysis_prompt = (
+                    f"Analyze the technical indicators for {data_source}.\n"
+                    f"Current Price: {df['Close'].iloc[-1]:.2f}\n"
+                    f"MA20: {mas['MA20'].iloc[-1]:.2f}, MA50: {mas['MA50'].iloc[-1]:.2f}, MA200: {mas['MA200'].iloc[-1]:.2f}\n"
+                    f"Fibonacci Support (0.0): {fib['0.0']:.2f}, Fibonacci Resistance (1.0): {fib['1.0']:.2f}\n"
+                    f"Write a short, professional trading summary based strictly on these indicators."
+                )
+                
+                if st.button("Generate Summary"):
+                    with st.spinner("Contacting Groq AI..."):
+                        summary = get_ai_summary(analysis_prompt)
+                        if summary:
+                            st.write(summary)
+                        else:
+                            st.error("Failed to generate summary. Please check the console logs.")
 else:
     st.info("Please select a ticker and click 'Fetch Data' or 'Load Demo Data' to begin.")
