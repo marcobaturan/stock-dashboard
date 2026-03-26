@@ -1,10 +1,13 @@
 # 📈 Stock Technical Analysis Dashboard
 
+[![Live App](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://stock-dashboard-frk3gcgcfke4n5ms7xw8lb.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Framework-FF4B4B.svg)](https://streamlit.io/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458.svg)](https://pandas.pydata.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-Visualizations-3F4F75.svg)](https://plotly.com/)
 [![Groq](https://img.shields.io/badge/AI-Llama_3_Summary-orange.svg)](https://groq.com/)
+
+### 🔗 **[Live Demo: Click here to try the Dashboard](https://stock-dashboard-frk3gcgcfke4n5ms7xw8lb.streamlit.app/)**
 
 > **"From Raw Financial Data to AI-Driven Trading Insights in < 500ms."**
 
