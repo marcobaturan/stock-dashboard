@@ -71,9 +71,9 @@ Leverages the **Groq API** to provide context-aware summaries. The system prompt
 
 ## 📧 Contact & Portfolio
 Created by **Marco Baturan**.
-*   [LinkedIn](https://www.linkedin.com/in/marcobaturan/)
-*   [Portfolio](https://marcobaturan.dev/)
-
+*   [LinkedIn](https://www.linkedin.com/in/marcogarciabaturan)
+*   [Portfolio](https://github.com/marcobaturan/Portfolio_AI)
+*	[GetDevWorks](https://www.getdevworks.com/)
 ---
 
 > **Disclaimer**: *This tool performs descriptive technical analysis only. It does not predict future prices and does not constitute financial advice.*
